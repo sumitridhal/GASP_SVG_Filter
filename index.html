@@ -1,0 +1,395 @@
+<main>
+  <div class="frame">
+    <h1 class="frame__pagetitle">Image Hover Effect with SVG Filters</h1>
+    <h2 class="frame__title">Hildegard Rost</h2>
+  </div>
+  <div class="content">
+    <div class="item">
+      <figure class="thumb">
+        <svg
+          class="distort"
+          width="350"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <filter id="a" data-type="turbulence">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0"
+              numOctaves="1"
+              result="warp"
+            ></feTurbulence>
+            <feDisplacementMap
+              xChannelSelector="R"
+              yChannelSelector="G"
+              scale="250"
+              in="SourceGraphic"
+            ></feDisplacementMap>
+          </filter>
+          <image
+            filter="url(#a)"
+            class="distort__img"
+            x="50"
+            y="50"
+            xlink:href="https://tympanus.net/Development/ThumbHoverSVGFilter/1.80b98c5b.jpg"
+            height="350"
+            width="250"
+            data-svg-origin="175.00000381469727 224.99999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+            style="transform-origin: 0px 0px"
+          ></image>
+        </svg>
+        <figcaption
+          class="thumb__caption"
+          style="transform: translate(0px, 220.183px)"
+        >
+          <p
+            class="thumb__caption-title"
+            style="opacity: 0; transform: translate(0px, 100px)"
+          >
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+            yardarm.
+          </p>
+          <a
+            class="thumb__caption-link"
+            style="opacity: 1; transform: translate(0px, 0px)"
+            >Explore</a
+          >
+        </figcaption>
+      </figure>
+      <div class="item__meta">
+        <p
+          class="item__meta-counter"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          01
+        </p>
+        <h3
+          class="item__meta-title"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Custodis
+        </h3>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          London, UK
+        </p>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          2019
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <figure class="thumb">
+        <svg
+          class="distort"
+          width="350"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <filter id="b" data-type="turbulence">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0"
+              numOctaves="1"
+              result="warp"
+            ></feTurbulence>
+            <feDisplacementMap
+              xChannelSelector="R"
+              yChannelSelector="G"
+              scale="20"
+              in="SourceGraphic"
+            ></feDisplacementMap>
+          </filter>
+          <image
+            filter="url(#b)"
+            class="distort__img"
+            x="50"
+            y="50"
+            xlink:href="https://tympanus.net/Development/ThumbHoverSVGFilter/2.be0b6e97.jpg"
+            height="350"
+            width="250"
+            data-svg-origin="175.00000381469727 224.99999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+            style="transform-origin: 0px 0px"
+          ></image>
+        </svg>
+        <figcaption
+          class="thumb__caption"
+          style="transform: translate(0px, 220.183px)"
+        >
+          <p
+            class="thumb__caption-title"
+            style="opacity: 1; transform: translate(0px, 0px)"
+          >
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+            yardarm.
+          </p>
+          <a
+            class="thumb__caption-link"
+            style="opacity: 1; transform: translate(0px, 0px)"
+            >Explore</a
+          >
+        </figcaption>
+      </figure>
+      <div class="item__meta">
+        <p
+          class="item__meta-counter"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          02
+        </p>
+        <h3
+          class="item__meta-title"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Lunatia
+        </h3>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Madrid, Spain
+        </p>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          2020
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <figure class="thumb">
+        <svg
+          class="distort"
+          width="350"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <filter id="c" data-type="displacementMap">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.01 0.005"
+              numOctaves="5"
+              seed="2"
+              result="noise"
+            ></feTurbulence>
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="noise"
+              scale="0"
+              xChannelSelector="R"
+              yChannelSelector="B"
+              filterUnits="userSpaceOnUse"
+            ></feDisplacementMap>
+          </filter>
+          <image
+            filter="url(#c)"
+            class="distort__img"
+            x="50"
+            y="50"
+            xlink:href="https://tympanus.net/Development/ThumbHoverSVGFilter/3.1667f2fd.jpg"
+            height="350"
+            width="250"
+            data-svg-origin="175.00000381469727 224.99999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+            style="transform-origin: 0px 0px"
+          ></image>
+        </svg>
+        <figcaption
+          class="thumb__caption"
+          style="transform: translate(0px, 220.183px)"
+        >
+          <p
+            class="thumb__caption-title"
+            style="opacity: 1; transform: translate(0px, 0px)"
+          >
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+            yardarm.
+          </p>
+          <a
+            class="thumb__caption-link"
+            style="opacity: 1; transform: translate(0px, 0px)"
+            >Explore</a
+          >
+        </figcaption>
+      </figure>
+      <div class="item__meta">
+        <p
+          class="item__meta-counter"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          03
+        </p>
+        <h3
+          class="item__meta-title"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Makkaria
+        </h3>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Paris, France
+        </p>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          2021
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <figure class="thumb">
+        <svg
+          class="distort"
+          width="350"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <filter id="d" data-type="displacementMap">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.07 0.01"
+              numOctaves="5"
+              seed="2"
+              result="noise"
+            ></feTurbulence>
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="noise"
+              scale="0"
+              xChannelSelector="R"
+              yChannelSelector="B"
+              filterUnits="userSpaceOnUse"
+            ></feDisplacementMap>
+          </filter>
+          <image
+            filter="url(#d)"
+            class="distort__img"
+            x="50"
+            y="50"
+            xlink:href="https://tympanus.net/Development/ThumbHoverSVGFilter/4.a242a4db.jpg"
+            height="350"
+            width="250"
+            data-svg-origin="175.00000381469727 224.99999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+            style="transform-origin: 0px 0px"
+          ></image>
+        </svg>
+        <figcaption
+          class="thumb__caption"
+          style="transform: translate(0px, 220.183px)"
+        >
+          <p
+            class="thumb__caption-title"
+            style="opacity: 1; transform: translate(0px, 0px)"
+          >
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+            yardarm.
+          </p>
+          <a
+            class="thumb__caption-link"
+            style="opacity: 1; transform: translate(0px, 0px)"
+            >Explore</a
+          >
+        </figcaption>
+      </figure>
+      <div class="item__meta">
+        <p
+          class="item__meta-counter"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          04
+        </p>
+        <h3
+          class="item__meta-title"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          House Friend
+        </h3>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          Constance, Germany
+        </p>
+        <p
+          class="item__meta-detail"
+          style="opacity: 1; transform: translate(0px, 0px)"
+        >
+          2022
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <figure class="thumb">
+        <svg
+          class="distort"
+          width="350"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <filter id="e" data-type="displacementMap">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.1"
+              numOctaves="5"
+              seed="2"
+              result="noise"
+            ></feTurbulence>
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="noise"
+              scale="0"
+              xChannelSelector="R"
+              yChannelSelector="B"
+              filterUnits="userSpaceOnUse"
+            ></feDisplacementMap>
+          </filter>
+          <image
+            filter="url(#e)"
+            class="distort__img"
+            x="50"
+            y="50"
+            xlink:href="https://tympanus.net/Development/ThumbHoverSVGFilter/5.cec98852.jpg"
+            height="350"
+            width="250"
+            data-svg-origin="175.00000381469727 224.99999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+            style="transform-origin: 0px 0px"
+          ></image>
+        </svg>
+        <figcaption class="thumb__caption">
+          <p class="thumb__caption-title">
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+            yardarm.
+          </p>
+          <a class="thumb__caption-link">Explore</a>
+        </figcaption>
+      </figure>
+      <div class="item__meta">
+        <p class="item__meta-counter">05</p>
+        <h3 class="item__meta-title">Green Eye</h3>
+        <p class="item__meta-detail">Cape Town, South Africa</p>
+        <p class="item__meta-detail">2023</p>
+      </div>
+    </div>
+  </div>
+</main>
+<svg class="cursor" width="40" height="40" viewBox="0 0 40 40">
+  <circle class="cursor__inner" cx="20" cy="20" r="10" />
+</svg>
