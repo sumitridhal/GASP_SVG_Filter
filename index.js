@@ -1,3 +1,4 @@
+import './style.css';
 import { Cursor } from './src/js/cursor';
 import { Item } from './src/js/item';
 
